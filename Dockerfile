@@ -1,4 +1,4 @@
-FROM node:14.18-bullseye-slim,
+FROM node:14.18-bullseye-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
 
