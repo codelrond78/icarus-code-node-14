@@ -9,7 +9,8 @@ WORKDIR /app-ini
 COPY start.sh start.sh
 RUN chmod u+x start.sh
 
-RUN npx preact-cli create default /my-app
-WORKDIR /my-app
+WORKDIR /app
+RUN npx preact-cli create default project
+WORKDIR /app/project
 
 CMD ["/app-ini/start.sh"]
