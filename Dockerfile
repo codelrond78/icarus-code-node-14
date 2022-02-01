@@ -9,5 +9,6 @@ WORKDIR /app-ini
 COPY start.sh start.sh
 RUN chmod u+x start.sh
 WORKDIR /app
+RUN yarn global add @vue/cli
 
 CMD ["/app-ini/start.sh"]
