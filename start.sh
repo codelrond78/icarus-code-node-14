@@ -30,4 +30,5 @@ if test -f "$ICARUSINI"; then
     $ICARUSINI > /app/icarus.log 2>&1 &
 fi
 
+npx degit sveltejs/template .
 code-server --auth password --bind-addr 0.0.0.0:8080 /app
