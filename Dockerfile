@@ -11,5 +11,6 @@ RUN chmod u+x start.sh
 WORKDIR /app
 RUN npx degit sveltejs/template .
 RUN npm install
+COPY tasks.json /app/.vscode/tasks.json
 
 CMD ["/app-ini/start.sh"]
