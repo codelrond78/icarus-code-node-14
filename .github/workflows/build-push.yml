@@ -2,7 +2,7 @@ name: Build Push icarus node 14 svelte
 on:
   push:
     branches:
-      - svelte
+      - sveltex
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
