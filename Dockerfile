@@ -9,5 +9,7 @@ WORKDIR /app-ini
 COPY start.sh start.sh
 RUN chmod u+x start.sh
 WORKDIR /app
+RUN npx degit sveltejs/template .
+RUN npm install
 
 CMD ["/app-ini/start.sh"]
