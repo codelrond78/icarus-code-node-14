@@ -5,6 +5,8 @@ DIR="."
 git config --global user.email ${GIT_USER_EMAIL}
 git config --global user.name ${GIT_USER}
 
+yarn create vite app --template vue
+
 cd /app
 
 if [ "$(ls -A $DIR)" ]; then
