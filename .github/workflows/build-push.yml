@@ -2,7 +2,7 @@ name: Build Push icarus node 14
 on:
   push:
     branches:
-      - 16
+      - vite-vue3
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -14,7 +14,7 @@ jobs:
         name: Build & push Docker image
         with:
           image: codelrond/icarus-code-node
-          tags: 16
+          tags: vite-vue3
           registry: docker.io
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASSWORD }}
