@@ -1,8 +1,8 @@
-name: Build Push icarus node 16 svelte++
+name: Build Push icarus node 16 svelte-plus
 on:
   push:
     branches:
-      - svelte++
+      - svelte-plus
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
