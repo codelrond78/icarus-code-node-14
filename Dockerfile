@@ -9,9 +9,8 @@ WORKDIR /app-ini
 COPY start.sh start.sh
 RUN chmod u+x start.sh
 WORKDIR /app
-#RUN npx degit sveltejs/template .
-RUN npx degit sveltejs/template-webpack .
-RUN npm install
-COPY tasks.json /app/.vscode/tasks.json
+RUN npx degit jerriclynsjohn/svelte-storybook-tailwind .
+RUN yarn
+#COPY tasks.json /app/.vscode/tasks.json
 
 CMD ["/app-ini/start.sh"]
