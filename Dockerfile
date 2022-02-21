@@ -9,7 +9,7 @@ WORKDIR /app-ini
 COPY start.sh start.sh
 RUN chmod u+x start.sh
 WORKDIR /app
-RUN git clone https://github.com/robole/svelte-vite-jest-template.git . 
+RUN git clone https://github.com/codelrond78/template-svelte-jest.git . 
 RUN npm install
 
 CMD ["/app-ini/start.sh"]
